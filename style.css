@@ -30,6 +30,7 @@ section{
     border-radius: 10%;
     justify-content: space-around;
     text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 h1{
     font-family: var(--fuente-titulos);
@@ -57,7 +58,8 @@ section ul{
 }
 ol li:hover{
     background-color: var(--color-de-texto);
-    list-style: none; 
+    list-style: none;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); 
 }
 a{
     color: darkred;
