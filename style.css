@@ -29,10 +29,31 @@ section{
     padding: 2rem;
     border-radius: 10%;
     justify-content: space-around;
+    text-align: center;
 }
 h1{
     font-family: var(--fuente-titulos);
 }
-ol li:hover{
+ul{
     background-color: var(--color-de-box);
+    border-radius: 50%;
+    display: inline-table;
+}
+ol{
+    background-color: var(--color-de-box);
+    display: inline-table;
+     border-radius: 10%;
+}
+section ul{
+    list-style: none; 
+    padding: 1rem;
+    justify-content: space-around; 
+}
+ol li:hover{
+    background-color: var(--color-de-texto);
+    list-style: none; 
+}
+a{
+    color: darkred;
+    text-decoration: none;
 }
