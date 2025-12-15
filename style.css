@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --color-de-texto: #FDAAAA;
+    --color-de-fondo: #3A6F43;
+    --color-de-resalto: #59AC77;
+    --color-de-box: #FFD5D5;
+    --fuente-titulos:"Kalnia Glaze", serif;
+    --fuente-texto:"Story Script", sans-serif;
+}
+
+body{
+    font-family: var(--fuente-texto);
+    background-color: var(--color-de-fondo);
+}
+header{
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    background-color: var(--color-de-box);
+}
+section{
+    background-color: var(--color-de-resalto);
+    width: 70%;
+    max-width: 800px;/*Maximo tope de estiramiento que debe tener */
+    margin: 2rem auto;/*auto centra el bloque a los lados*/
+    padding: 2rem;
+    border-radius: 10%;
+    justify-content: space-around;
+}
+h1{
+    font-family: var(--fuente-titulos);
+}
+ol li:hover{
+    background-color: var(--color-de-box);
+}
