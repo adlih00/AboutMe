@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 :root{
-    --color-de-texto: #FDAAAA;
+    --color-de-texto: #A2DE96;
     --color-de-fondo: #3A6F43;
     --color-de-resalto: #59AC77;
-    --color-de-box: #FFD5D5;
+    --color-de-box: #D7C3F1;
     --fuente-titulos:"Kalnia Glaze", serif;
     --fuente-texto:"Story Script", sans-serif;
 }
@@ -19,7 +19,7 @@ body{
 header{
     font-family: var(--fuente-titulos);
     text-align: center;
-    background-color: var(--color-de-box);
+    background-color: #BDE8CA;
 }
 section{
     background-color: var(--color-de-resalto);
@@ -33,6 +33,11 @@ section{
 }
 h1{
     font-family: var(--fuente-titulos);
+    background-color: #DBC6EB;
+    border-radius: 5%;
+    margin: 1rem auto;/*auto centra el bloque a los lados*/
+    padding: 1rem;
+
 }
 ul{
     background-color: var(--color-de-box);
@@ -43,6 +48,7 @@ ol{
     background-color: var(--color-de-box);
     display: inline-table;
      border-radius: 10%;
+     padding: 1rem;
 }
 section ul{
     list-style: none; 
