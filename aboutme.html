@@ -5,38 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí</title> <!-- Titulo de la pag, en el navegador -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Story+Script&display=swap"
+    <!-- Enlace de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Story+Script&display=swap"
         rel="stylesheet">
-    
-
+        
+    <!-- Enlace CSS, siempre abajo de Bootstrap -->
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
     <header> Hilda Elizabeth Alcantar Gutierrez </header> <!-- Titulo principal, mi nombre  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">About Me</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hobbies</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Links Music
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Hunting Soul </a></li>
+            <li><a class="dropdown-item" href="#">UPS/DOWN</a> </li>
+            <li><a class="dropdown-item" href="#">Golden </a></li>
+            <li><a class="dropdown-item" href="#">Not Sorry for Loving You</a> </li>
+            <li><a class="dropdown-item" href="#">Stelar</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">➕ More ➕</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Video Games 🎮</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
     <main>
         <section id="sobreMi">
-            <img src="./cat-programer.webp" width="50%" alt="Gatito programador" id="miImagenUnica" /><!-- Aqui va la imagen -->
+            <img src="./cat-programer.webp" class="rounded mx-auto d-block" width="40%" alt="Gatito programador" id="miImagenUnica" /><!-- Aqui va la imagen -->
             <p> Soy una gran fan de los libros de fantasía, y mi musica favorita suele ser el metal, aunque también
                 disfruto mucho de la energía de los musicales de teatro. Para mantenerme activa, me encanta practicar
                 básquetbol
                 y natación. Actualmente, estoy metida de lleno en el aprendizaje de programación, especializándome en
                 desarrollo
                 Java full stack. </p><!-- Descripcion breve sobre mi -->
-            <h1> Mis hobbies 🎶🧚‍♀️🧚‍♂️🧙‍♂️🐉📖</h1> <!--  -->
-            <ul>
+            <div class="hobbies">   
+            <h1 > Mis hobbies 🎶🧚‍♀️🧚‍♂️🧙‍♂️🐉📖</h1> <!--  -->
+            <ul class="list">
                 <li> Leer libros </li>
                 <li> Escuchar musica/cantar en la ducha</li>
                 <li> Hacar joyeria/figuras de miyuki</li>
                 <li> Aprender algo nuevo</li>
             </ul>
+            </div> 
         </section>
         <section>
-            <h1> Mis gustos musicales 🎶🎶🎶</h2>
+            <h1 class="musica"> Mis gustos musicales 🎶🎶🎶</h2>
                 <ol>
                     <li> <a href="https://www.youtube.com/watch?v=K4hNyARBf28&list=RDK4hNyARBf28&start_radio=1">Hunting
                             Soul</a>
@@ -56,6 +102,11 @@
                 </ol>
         </section>
     </main>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
